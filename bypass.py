@@ -22,8 +22,8 @@ class Instantiate_scraper:
         self.headers['User-agent'] = "Mozilla/5.0 (Windows NT 6.1; rv:24.0) Gecko/20100101 Firefox/24.0"
 
 def start_download():
-    link = 'PUT HOMEPAGE URL HERE'
-    link_to_get = 'PUT FULL FILE URL HERE'
+    link = 'https://fukot.cc'
+    link_to_get = 'https://fukot.cc/cdn-cgi/phish-bypass'
     scraper = Instantiate_scraper()
     scraper = scraper.scraper
     response = scraper.get(link, stream=True, headers=scraper.headers)
